@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .flip-card {
+            background-color: transparent;
+            width: 200px;
+            height: 200px;
+            perspective: 1000px;
+
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 1.2s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front {
+            background-color: #d3e1ea;
+            color: lightslategrey;
+        }
+
+        .flip-card-back {
+            background-color: #d3e1ea;
+            color: lightslategrey;
+            transform: rotateY(180deg);
+        }
+    </style>
+
+    <title>Pfosser Homework01 WebExperiences</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+
+    <div class="navbar">
+        <a href="paintings.html">The Paintings</a>
+        <a href="memorygame.html">Memory Game</a>
+        <a href="map.html">The Map</a>
+        <a href="index.html" class="right">Home</a>
+    </div>
+
+</head>
+
+<body>
+
+    <br>
+    <p style="color:rgb(55, 65, 75)">In February 1888 van Gogh moved to Arles, southern France,<br>
+        where he painted in isolation, depicting the Provençal landscape and people.
+        <br>
+        <br>
+        Gauguin joined him in the fall, and the two artists worked together.
+        <br>
+        <br>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Paul_Gauguin_-_Vincent_van_Gogh_painting_sunflowers_-_Google_Art_Project.jpg"
+            alt="Paul Gauguin paints Vincent van Gogh while painting Sunflowers 1888" width=auto height="200">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Vincent_van_Gogh_-_De_stoel_van_Gauguin_-_Google_Art_Project.jpg"
+            alt="Van Gogh paints the chair of Paul Gauguin 1888" width=auto height="200">
+    <p style="color:lightslategray; font-size:10px">Left: Vincent van Gogh painting sunflowers, 1888, by Paul Gauguin.
+        <br>Right: Gauguin's chair, 1888, by Vincent van Gogh. <br>Images via Wikimedia
+        Commons, licenses: <a href="https://creativecommons.org/publicdomain/zero/1.0/">Public Domain</a>
+    </p>
+
+    <br>
+
+
+    <h3 style="color:rgb(55, 65, 75)">Paintings created in Arles (Selection)</h3>
+    <h6 style="color:rgb(55, 65, 75)"><i>Hover over the images below</i></h6>
+    <div
+        style="display:flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 20px 20px; height: 100px;">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Oude_Arl%C3%A9sienne_-_s0145V1962_-_Van_Gogh_Museum.jpg"
+                        alt="Vincent van Gogh Painting" style="width:auto;height:200px;">
+                </div>
+                <div class="flip-card-back">
+                    <h3>An old woman from Arles</h3>
+                    <p style="color:rgb(154, 176, 198);">Vincent van Gogh 1853-1890</p>
+                    <p style="color:rgb(154, 176, 198);"><a href="https://www.vangoghmuseum.nl/en" target="_blank"
+                            style="text-decoration:none">Van
+                            Gogh
+                            Museum</a></p>
+                    </h4 color: lightslategrey>February 1888</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Van_Gogh_-_Landschaft_im_Schnee.jpg"
+                        alt="Vincent van Gogh Painting" style="width:200px;height:200px;">
+                </div>
+                <div class="flip-card-back">
+                    <h3>Landscape in the snow</h3>
+                    <p style="color:rgb(154, 176, 198);">Vincent van Gogh 1853-1890</p>
+                    <p style="color:rgb(154, 176, 198);"><a href="https://www.guggenheim.org/" target="_blank"
+                            style="text-decoration:none">Guggenheim Museum NY</a></p>
+                    </h4 color: lightslategrey>February 1888</h4>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h3>Snowy Landscape with Arles in the Background</h3>
+                    <p style="color:rgb(154, 176, 198);">Vincent van Gogh</p>
+                    <p style="color:rgb(154, 176, 198);"><a href="https://en.wikipedia.org/wiki/Private_collection"
+                            target="_blank" style="text-decoration:none">Private Ownership</a></p>
+                    </h4 color: lightslategrey>February 1888</h4>
+
+                </div>
+                <div class="flip-card-back">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Van_Gogh_-_Landschaft_im_Schnee_mit_Arles_im_Hintergrund.jpeg"
+                        alt="Vincent van Gogh Painting" style="width:200px;height:200px;">
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Blossoming_Almond_Branch_in_a_Glass_with_a_Book_-_My_Dream.jpg"
+                        alt="Vincent van Gogh Painting" style="width:200px;height:200px;">
+                </div>
+                <div class="flip-card-back">
+                    <h3>Blossoming Almond Branch in a Glass with a Book</h3>
+                    <p style="color:rgb(154, 176, 198);">Vincent van Gogh</p>
+                    <p style="color:rgb(154, 176, 198);"><a href="https://en.wikipedia.org/wiki/Private_collection"
+                            target="_blank" style="text-decoration:none">Private Ownership</a></p>
+                    </h4 color: lightslategrey>March 1888</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div
+        style="display:flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 20px 20px; height: 100px;">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h3>Field with flowers near Arles</h3>
+                    <p style="color:rgb(154, 176, 198);">Vincent van Gogh 1853-1890</p>
+                    <p style="color:rgb(154, 176, 198);"><a href="https://www.vangoghmuseum.nl/en" target="_blank"
+                            style="text-decoration:none">Van
+                            Gogh
+                            Museum</a></p>
+                    </h4 color: lightslategrey>May 1888</h4>
+
+
+                </div>
+                <div class="flip-card-back">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Vincent_van_Gogh_-_Veld_met_bloemen_bij_Arles_-_Google_Art_Project.jpg"
+                        alt="Vincent van Gogh Painting" style="width:200px;height:200px;">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Vincent_van_Gogh_-_Zeegezicht_bij_Les_Saintes-Maries-de-la-Mer_-_Google_Art_Project.jpg"
+                        alt="Vincent van Gogh Painting" style="width:200px;height:200px;">
+                </div>
+                <div class="flip-card-back">
+                    <h3>Seascape near Les Saintes-Maries-de-la-Mer</h3>
+                    <p style="color:rgb(154, 176, 198);">Vincent van Gogh</p>
+                    <p style="color:rgb(154, 176, 198);"><a href="https://www.vangoghmuseum.nl/en" target="_blank"
+                            style="text-decoration:none">Van
+                            Gogh
+                            Museum</a></p>
+                    </h4 color: lightslategrey>June 1888</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Van_Gogh_-_Weizenfeld_bei_Sonnenuntergang.jpeg"
+                        alt="Vincent van Gogh Painting" style="width:200px;height:200px;">
+                </div>
+                <div class="flip-card-back">
+                    <h3>Wheat field at sunset</h3>
+                    <p style="color:rgb(154, 176, 198);">Vincent van Gogh 1853-1890</p>
+                    <p style="color:rgb(154, 176, 198);"><a href="https://www.kmw.ch/" target="_blank"
+                            style="text-decoration:none">Kunstmuseum
+                            Winterthur</a></p>
+                    </h4 color: lightslategrey>June 1888</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Een_paar_leren_klompen_-_s0120V1962_-_Van_Gogh_Museum.jpg"
+                        alt="Vincent van Gogh Painting" style="width:200px;height:200px;">
+                </div>
+                <div class="flip-card-back">
+                    <h3>A Pair of Leather Clogs</h3>
+                    <p style="color:rgb(154, 176, 198);">Vincent van Gogh 1853-1890</p>
+                    <p style="color:rgb(154, 176, 198);"><a href="https://www.vangoghmuseum.nl/en" target="_blank"
+                            style="text-decoration:none">Van
+                            Gogh
+                            Museum</a></p>
+                    </h4 color: lightslategrey>Autumn 1889</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+
+</body>
+
+</html>
